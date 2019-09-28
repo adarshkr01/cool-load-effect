@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Testing Cool Effect</title>
+<style>
+	body {
+		font-family: sans-serif;
+		font-size: 25px;
+	}
+	.text {
+		position: absolute;
+		display: inline-block;
+		animation: coolTrick 2s ease-in;
+	}
+
+	.margin1 {
+		margin: 25px 45%;
+	}
+
+	.margin2 {
+		margin: 25px 55%;
+	}
+
+	.margin3 {
+		margin: 25px 65%;
+	}
+
+	@keyframes coolTrick {
+		0% {
+			opacity: 0;
+			transform: translateY(90px);
+			font-size: 50px;
+		}
+		
+		50% {
+			opacity: 1;
+			transform: translateY(90px);
+		}
+
+		60% {
+			font-size: 25px;
+			transform: translateY(0px);
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+</style>
+</head>
+<body>
+	
+	<p class="text margin1">About</p>
+	<p class="text margin2">Hobbies</p>
+	<p class="text margin3">Contact</p>
+
+</body>
+</html>
